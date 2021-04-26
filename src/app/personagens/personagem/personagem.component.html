@@ -1,0 +1,19 @@
+<div fxFlex fxLayout="column" id="mainpage">
+    <nav>
+        <a routerLink="../layout">
+            <img src="../../../assets/img/marvel-logo.png" alt="logo" style="height: 40px; display: flex; align-items: center;">
+        </a>
+    </nav>
+    <div fxLayout="row wrap">
+        <div class="cardWrap" fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" fxLayout="column" *ngFor="let personagem of getCharacters | async ">
+            <mat-card class="card ">
+
+                <a href="{{personagem.urls[0].url}} " target="_top">
+                    <img mat-card-image src="{{personagem.thumbnail.path}}.{{personagem.thumbnail.extension}} " alt=" {{personagem.name}} ">
+                    <mat-card-title style="width: 100%;">{{personagem.name}}</mat-card-title>
+                </a>
+
+            </mat-card>
+        </div>
+    </div>
+</div>

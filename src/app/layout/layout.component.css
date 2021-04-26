@@ -1,0 +1,145 @@
+.mainpage {
+    background-image: url("../../assets/img/spider-man-miles-morales-wallpaper-hd.jpg");
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+    color: #fff;
+}
+
+.front {
+    background-image: url("../../assets/img/morales.jpg");
+    background-size: cover;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.front span {
+    background: rgba(0, 0, 0, .5);
+    height: 185px;
+    position: relative;
+    top: 65%;
+    text-align: center;
+}
+
+.dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dialog button {
+    background: #e0fbfc;
+    border: none;
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+    padding: 5px;
+    color: #000;
+}
+
+.dialog button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.dialog p {
+    font-size: 13px;
+    color: inherit;
+    letter-spacing: 3px;
+}
+
+.hid {
+    display: none;
+}
+
+@media screen and (min-width:740px) {
+    .mainpage {
+        background-image: url("../../assets/img/spier-man-miles-morales.png");
+        background-size: cover;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        filter: blur(6px);
+        -webkit-filter: blur(6px);
+        color: #fff;
+    }
+    .front {
+        background-image: url("../../assets/img/miles.jpg");
+        background-size: cover;
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        color: #fff;
+    }
+    .dialog {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dialog img {
+        position: relative;
+        top: 20px;
+    }
+    .dialog p {
+        position: relative;
+        top: 50px;
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+    .dialog button {
+        background: #e0fbfc;
+        border: none;
+        border-radius: 5px;
+        width: 90px;
+        height: 35px;
+        padding: 5px;
+        color: #000;
+        position: relative;
+        top: 70px;
+    }
+    .dialog button a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .front span {
+        background: rgb(0, 0, 36);
+        height: 100%;
+        width: 250px;
+        position: relative;
+        top: 0;
+        left: 79%;
+        /* transform: translate(10%); */
+        text-align: center;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .hid {
+        display: flex;
+    }
+}
